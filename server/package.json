@@ -1,0 +1,27 @@
+{
+  "name": "chat-server",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon --exec \"ts-node src/index.ts\" --watch ./src",
+    "dev2": "ts-node src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "author": "",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.7.4",
+    "uuid": "^9.0.1"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.17",
+    "@types/socket.io": "^3.0.2",
+    "nodemon": "^3.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

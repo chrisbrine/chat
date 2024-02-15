@@ -1,8 +1,14 @@
+# Chat
+
+This is bundled with a server app in TypeScript and NodeJS and a client side in ReactJS, Tailwind CSS and TypeScript.
+
+This is essentially a group chat application that will create groups over SocketIO for any number of people to chat in and will track users for inside of them. It also supports emojis and is able to be expanded further down the road.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Available Scripts for the frontend
 
 In the project directory, you can run:
 
@@ -38,6 +44,16 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## SERVER
+
+The server can be found in the `./server` directory from the main directory. Before running, be sure to run `npm install`.
+
+Available scripts:
+* `npm run dev`: this will run nodemon to run in a development environment and will restart when files change for the server.
+* `npm run dev2`: also in a development environment but without nodemon to watch for changes to restarts have to be done manually.
+* `npm run build`: build the server into the JS files
+* `npm run start`: will run the JS files after building them in the previous script
 
 ## Learn More
 
